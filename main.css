@@ -28,20 +28,18 @@ img {
 }
 
 .bioForm {
-	visibility: hidden;
 	text-align: right;
 }
 
+
 .formDiv {
-	width: 50%;
 	margin: auto;
 }
 
 .bigInput {
-	height: 150px;
-	width: 200px;
+	vertical-align: top;
 }
 
 .smallInput {
-	width: 200px;
+	width: 495px;
 }

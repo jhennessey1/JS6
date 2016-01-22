@@ -7,13 +7,13 @@
 		<script type="text/javascript" src="main.js"></script>
 	</head>
 	<body ng-controller="faceRoller">
-		<div class="formDiv">
+		<div class="formDiv" ng-show="editProf">
 			<form class="bioForm">
-				Name: <input class="smallInput" type="name"/><br/>
-				Bio: <input class="bigInput"/><br/>
-				Favorite Books: <input class="bigInput"/><br/>
-				Favorite JS Libraries: <input class="bigInput"/><br/>
-				<input type="submit"/>
+				Name: <input ng-model="duckName" class="smallInput" type="name" ng-model="nameForm"></textarea><br/>
+				Bio: <textarea ng-model="bio" name="bio" class="bigInput" rows="10" cols="80" ng-model="bioThing"></textarea><br/>
+				Favorite Books: <textarea ng-model="books" name="favBooks" rows="10" cols="80" class="bigInput" ng-model="favBooksForm"></textarea><br/>
+				Favorite JS Libraries: <textarea ng-model="jsLibs" class="bigInput" name="favLibs" rows="10" cols="80" ng-model="favLibsForm"></textarea><br/>
+				<input type="submit" ng-click="subForm($event)"/>
 			</form> 
 		</div>
 		<div class="titleInfo">
@@ -21,15 +21,15 @@
 			<h1>{{duckName}}</h1>
 			<h2>About {{duckName}}</h2>
 			<p>I'm just a duck, you know? I like doing duck stuff.</p>
-			<button>Edit Profile</button>
+			<button ng-click="showForm($event)">Edit Profile</button>
 		</div>
 		<div class="bodyInfo">
 			<h2>Bio</h2>
-			<p>I was born in a pond. I live in that same pond. I sometimes leave the pond and go to another pond. Then I come back to the pond. It's a good pond.</p>
+			<p>{{bio}}</p>
 			<h2>Favorite Books</h2>
-			<p>I don't have much time to read, but I do have one little favorite. It's called "Whole Wheat Bread". I sometimes find it floating in my pond after some god damn townies come throw food at me. Anyway, it's pretty good, I really like the Nutritional Info chapter.</p>
+			<p>{{books}}</p>
 			<h2>Favorite Javascript Libraries</h2>
-			<p>Well, considering the fact that I'm a duck I'm pretty sure most people know my answer to this question. Mojito is my favorite. It's built on YUI 3 that enables agile development of Web applications. Mojito allows developers to use a combination of configuration and an MVC architecture to create HTML5 applications. Because client and server components are both written in JavaScript, Mojito can run on the client or the server. So naturally it's kind of a favorite for ducks everywhere.</p>
+			<p>{{jsLibs}}</p>
 		</div>
 	</body>
 </html>

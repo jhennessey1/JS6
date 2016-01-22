@@ -14,8 +14,17 @@ angular.module('theSocialModwork')
 		}
 
 		$scope.editProf = false
-
+		$scope.button = "Show Form"
+		count = 2
 		$scope.showForm = function(event) {
 			$scope.editProf = !$scope.editProf
+			count += 1
+			if(count % 2 !== 0) {
+				$scope.button = "Hide Form"
+			}
+			else {
+				$scope.button = "Show Form"
+			}
+
 		}
 	}])

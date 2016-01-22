@@ -13,7 +13,6 @@
 				Bio: <textarea ng-model="bio" name="bio" class="bigInput" rows="10" cols="80" ng-model="bioThing"></textarea><br/>
 				Favorite Books: <textarea ng-model="books" name="favBooks" rows="10" cols="80" class="bigInput" ng-model="favBooksForm"></textarea><br/>
 				Favorite JS Libraries: <textarea ng-model="jsLibs" class="bigInput" name="favLibs" rows="10" cols="80" ng-model="favLibsForm"></textarea><br/>
-				<input type="submit" ng-click="subForm($event)"/>
 			</form> 
 		</div>
 		<div class="titleInfo">
@@ -21,7 +20,7 @@
 			<h1>{{duckName}}</h1>
 			<h2>About {{duckName}}</h2>
 			<p>I'm just a duck, you know? I like doing duck stuff.</p>
-			<button ng-click="showForm($event)">Edit Profile</button>
+			<button ng-click="showForm($event)">{{button}}</button>
 		</div>
 		<div class="bodyInfo">
 			<h2>Bio</h2>

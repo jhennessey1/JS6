@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="theSocialModwork">
+	<head>
+		<title>Hide-a-Form</title>
+		<link rel="stylesheet" href="main.css"/>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</head>
+	<body ng-controller="faceRoller">
+		<div class="formDiv">
+			<form class="bioForm">
+				Name: <input class="smallInput" type="name"/><br/>
+				Bio: <input class="bigInput"/><br/>
+				Favorite Books: <input class="bigInput"/><br/>
+				Favorite JS Libraries: <input class="bigInput"/><br/>
+				<input type="submit"/>
+			</form> 
+		</div>
+		<div class="titleInfo">
+			<img width="100px" height="175px" src="http://www.mapleleaffarms.com/lib/sitefiles/White-Duck_Facing_Front.jpg"/>
+			<h1>{{duckName}}</h1>
+			<h2>About {{duckName}}</h2>
+			<p>I'm just a duck, you know? I like doing duck stuff.</p>
+			<button>Edit Profile</button>
+		</div>
+		<div class="bodyInfo">
+			<h2>Bio</h2>
+			<p>I was born in a pond. I live in that same pond. I sometimes leave the pond and go to another pond. Then I come back to the pond. It's a good pond.</p>
+			<h2>Favorite Books</h2>
+			<p>I don't have much time to read, but I do have one little favorite. It's called "Whole Wheat Bread". I sometimes find it floating in my pond after some god damn townies come throw food at me. Anyway, it's pretty good, I really like the Nutritional Info chapter.</p>
+			<h2>Favorite Javascript Libraries</h2>
+			<p>Well, considering the fact that I'm a duck I'm pretty sure most people know my answer to this question. Mojito is my favorite. It's built on YUI 3 that enables agile development of Web applications. Mojito allows developers to use a combination of configuration and an MVC architecture to create HTML5 applications. Because client and server components are both written in JavaScript, Mojito can run on the client or the server. So naturally it's kind of a favorite for ducks everywhere.</p>
+		</div>
+	</body>
+</html>

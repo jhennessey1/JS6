@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+}
+
+.titleInfo {
+	position: relative;
+	top: 20px;
+	left: 20px;
+}
+
+.titleInfo img, .titleInfo h1 {
+	display: inline-block;
+	vertical-align: top;
+}
+
+img {
+	border: 3px solid #6699ff;
+}
+
+.bodyInfo {
+	position: relative;
+	margin: 15px;
+	padding: 10px;
+}
+
+.bodyInfo * {
+	padding-top: 20px;
+}
+
+.bioForm {
+	visibility: hidden;
+	text-align: right;
+}
+
+.formDiv {
+	width: 50%;
+	margin: auto;
+}
+
+.bigInput {
+	height: 150px;
+	width: 200px;
+}
+
+.smallInput {
+	width: 200px;
+}
